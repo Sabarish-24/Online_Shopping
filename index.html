@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <script src="shop.js"></script>
+        <link rel="stylesheet" type="text/css" href="shop.css">
+        <title> Shopping cart </title>
+    </head>
+    <body onload="putCart()">
+        <div>
+            <div id="overall">
+                <div id="top">
+                    <h1 style="padding-top: 40px; color:antiquewhite">DINE_IN ORDERING</h1>
+                </div>
+                <div>
+                    <div id="topic" style="padding-left: 350px; padding-top: 10px; font-weight:bold; font-size: 20px;"></div>
+                    <div id="items">
+                    </div>
+                    <div id="categories">
+                        <center>
+                        <h3 style="text-align: center; color: darkslategray;">CATEGORIES</h3>
+                        <div class="categ">
+                            <ul id="list"><p></p>
+                                <a href="javascript:loadDoc(1)"><li>Starters</li></a><br>
+                                <a href="javascript:loadDoc(2)"><li>Beverages</li></a><br>
+                                <a href="javascript:loadDoc(3)"><li>Conizzas</li></a><br>
+                                <a href="javascript:loadDoc(4)"><li>Desserts</li></a><br>
+                            </ul>
+                        </div>
+                        <div class="categ">
+                            <ul id="list"><p></p>
+                                <a href="javascript:loadDoc(5)"><li>Pizzas</li></a><br>
+                                <a href="javascript:loadDoc(6)"><li>Extremes</li></a><br>
+                                <a href="javascript:loadDoc(7)"><li>Supremes</li></a><br>
+                                <a href="javascript:loadDoc(8)"><li>Pastas</li></a><br>
+                            </ul>
+                        </div>
+                        </center>
+                    </div>
+                </div>
+                <script>
+                    document.cookie = "selected=; expires=Thu, 01 Jan 1970 00:00:00 UTC;";
+                </script>
+                <div id="cart">
+                    <ul id="selected"><h3 onclick="addCart('hey')">YOUR CART</h3>
+                    </ul>
+                    <h4 id="total" style="text-align: right; color:green">Total = Rs. 0</h4>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
